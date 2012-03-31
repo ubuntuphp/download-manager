@@ -4,15 +4,17 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui network
 
 TARGET = downloadmanager
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    download.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    download.h
 
 FORMS    += mainwindow.ui
