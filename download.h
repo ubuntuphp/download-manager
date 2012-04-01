@@ -4,6 +4,7 @@
 #include <QNetworkReply>
 #include <QNetworkAccessManager>
 #include <QNetworkRequest>
+#include <QFile>
 class download : public QObject
 {
     Q_OBJECT
@@ -11,6 +12,7 @@ class download : public QObject
     QString saveurl;
     QNetworkAccessManager * manager;
     QNetworkReply * reply;
+    QFile file;
 public:
     explicit download(QObject *parent = 0);
     void requestdownload(QString url, QString saveurl);

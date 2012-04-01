@@ -7,7 +7,8 @@ download::download(QObject *parent) :
 }
 void download::requestdownload(QString url ,QString saveurl)
 {
-    reply = manager->get(QNetworkRequest(QUrl(url)));
+    reply = manager->get(QNetworkRequest(QUrl(url)));]
+    file.set
 }
 QNetworkReply * download::networkreply()
 {
